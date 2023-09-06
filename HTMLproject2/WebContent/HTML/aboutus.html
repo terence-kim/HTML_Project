@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../css/aboutUs.css" rel="stylesheet">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+	rel="stylesheet">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../css/index.css"></script>
+<title>소개</title>
+</head>
+<body>
+	<nav class="navbar bg-body-tertiary fixed-top" id="top">
+
+		<center>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="../index.html"><img
+					src="../images/lo.png"></a>
+		</center>
+		<button class="navbar-toggler" type="button"
+			data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+			aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="offcanvas offcanvas-end" tabindex="-1"
+			id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+			<div class="container">
+					<li class="nav-item"><button type="button"
+							class="btn btn-primary" data-bs-toggle="modal"
+							data-bs-target="#exampleModal" id="login">Login</button></li>
+							</div>
+			<div class="offcanvas-body">
+				
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+					</li>
+					
+					<li class="nav-item"><a class="nav-link" href="aboutus.html">소개</a></li>
+					
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> 상품 </a>
+						<ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="highshop.html">증류주</a></li>
+              <li><a class="dropdown-item" href="makshop.html">탁주</a></li>
+            </ul>
+					
+							
+							
+             
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> 주문 </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="cart.html">장바구니</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="payment.html">결제</a></li>
+						</ul></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> 커뮤니티 </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+							<li><a class="dropdown-item" href="coment.html">후기</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="news.html">공지사항</a></li>
+						</ul></li>
+				</ul>
+				<form class="d-flex mt-3" role="search">
+					<input  class="form-control me-2" id="search" type="search" placeholder="Search"
+						aria-label="검색">
+					<button class="btn btn-outline-success" type="submit" id="searchbtn">검색</button>
+
+				</form>
+			</div>
+		</div>
+		</div>
+	</nav>
+	<div class="modal fade" id="exampleModal" tabindex="-1"
+	aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal"
+					aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="form-title text-center">
+					<h4>Login</h4>
+				</div>
+				<div class="d-flex flex-column text-center">
+					<form>
+						<div class="form-group">
+							<input type="email" class="form-control" id="id"
+								placeholder="ID">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" id="password"
+								placeholder="Password">
+						</div>
+				</div>
+				<div class="modal-footer">
+					<a type="button" class="btn btn" id="log" href="../index.html">Login</a>
+					<a type="button" class="btn btn" id="sin" href="singup.html">SignUp</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+
+	
+	<center>
+	<div id="we"><h1>ABOUT US</h1></div>
+	<img src="../images/about.jpg" class="img-fluid">
+	</center>
+	<br/>
+	<div class="container">
+	<div class="jumbotron">
+		<h1 class="display-4"><img src="../images/logo.png" id="logo">에 오신걸 환영합니다.</h1>
+	
+		<hr class="my-4">
+		<p class="fs-5" id="font"><strong>안녕하세요!</strong> 저희 <strong>SUL</strong>에 오신 것을 환영합니다. 우리는 한국의 풍부한 문화와 전통을 경험할 수 있는 특별한 서비스를 제공하고자 노력하고 있습니다.
+
+			한국은 오랜 역사와 풍요로운 자연환경으로 인해 다양하고 독특한 전통술을 가지고 있습니다. 우리 사이트에서는 이러한 전통술들을 구독 형태로 제공하여 고객 여러분들께 직접 경험할 수 있는 기회를 제공하고 있습니다.
+			
+			우리의 구독시스템은 다양한 종류의 전통술을 매달 정기적으로 제공합니다. 각 월마다 새롭게 선택된 전통술을 소개하며, 그에 따른 제조 방법, 특징, 역사적 배경 등에 대한 정보를 제공합니다. 이를 통해 고객 여러분들은 전통술의 다양성과 깊이를 알아갈 수 있을 것입니다.
+			
+			우리 사이트는 또한 전통술과 관련된 다양한 이벤트, 행사, 워크숍 등을 개최하여 고객 여러분들에게 보다 실질적인 경험을 제공하고자 합니다. 전문가들과 함께하는 맛보기 세션, 전통술 제조 과정에 대한 워크숍, 전통술과 음식의 조화를 즐길 수 있는 페어링 등 다양한 프로그램을 운영하고 있습니다.
+			
+			우리의 목표는 한국의 전통술을 세계에 널리 알리는 것뿐만 아니라, 한국 문화를 사랑하고 관심을 가진 분들에게 새로운 경험과 즐거움을 선사하는 것입니다. 우리와 함께라면 한국의 전통술을 통해 다른 문화와 소통하고, 새로운 맛과 향을 탐험하며, 고유한 전통의 아름다움을 체험할 수 있을 것입니다.
+			
+			저희 사이트를 통해 한국의 전통술에 대한 지식을 넓히고, 그 매력적인 세계에 빠져보세요. 우리의 구독 시스템은 전통과 현대의 만남을 통해 독특한 경험을 선사할 것입니다. 지금 바로 저희 사이트를 방문하여 다양한 전통술을 만나보세요!
+			</p>
+		
+		<a class="btn btn-lg" href="../index.html" role="button" id="home">구경하기</a>
+	  </div>
+	</div>
+	<div class="container">
+		<footer class="pt-4 my-md-5 pt-md-5 border-top">
+			<div class="row">
+				<div class="col-12 col-md">
+					<img class="mb-2" src="../images/lo.png" alt=""
+						width="200" height="45"> <small
+						class="d-block mb-3 text-muted" id="year">&copy; 2015-2023</small>
+				</div>
+				<div class="col-6 col-md">
+					<h5>Features</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Cool stuff</a></li>
+						<li><a class="text-muted" href="#">Random feature</a></li>
+						<li><a class="text-muted" href="#">Team feature</a></li>
+						<li><a class="text-muted" href="#">Stuff for developers</a></li>
+						<li><a class="text-muted" href="#">Another one</a></li>
+						<li><a class="text-muted" href="#">Last time</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>Resources</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Resource</a></li>
+						<li><a class="text-muted" href="#">Resource name</a></li>
+						<li><a class="text-muted" href="#">Another resource</a></li>
+						<li><a class="text-muted" href="#">Final resource</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>About</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Team</a></li>
+						<li><a class="text-muted" href="#">Locations</a></li>
+						<li><a class="text-muted" href="#">Privacy</a></li>
+						<li><a class="text-muted" href="#">Terms</a></li>
+					</ul>
+				
+  
+</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

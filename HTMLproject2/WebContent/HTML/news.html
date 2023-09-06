@@ -1,0 +1,236 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author"
+        content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/pricing/">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/news.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src= "../js/payment.js" type="text/javascript"></script>
+    
+    <title>공지사항</title>
+    </head>
+    <body>
+        <nav class="navbar bg-body-tertiary fixed-top" id="top">
+
+            <center>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img
+                        src="../images/lo.png"></a>
+            </center>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="offcanvas offcanvas-end" tabindex="-1"
+                id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <div class="container">
+                        <li class="nav-item"><button type="button"
+                                class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" id="login">Login</button></li>
+                                </div>
+                <div class="offcanvas-body">
+                    
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">소개</a></li>
+                        
+                        <li class="nav-item dropdown"><a
+                            class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> 상품 </a>
+                            <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="highshop.html">증류주</a></li>
+                  <li><a class="dropdown-item" href="makshop.html">탁주</a></li>
+                </ul>
+                        
+                                
+                                
+                 
+                        <li class="nav-item dropdown"><a
+                            class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> 주문 </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="cart.html">장바구니</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="payment.html">결제</a></li>
+                            </ul></li>
+                        <li class="nav-item dropdown"><a
+                            class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> 커뮤니티 </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="coment.html">후기</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="news.html">공지사항</a></li>
+                            </ul></li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input  class="form-control me-2" id="search" type="search" placeholder="Search"
+                            aria-label="검색">
+                        <button class="btn btn-outline-success" type="submit" id="searchbtn">검색</button>
+    
+                    </form>
+                </div>
+            </div>
+            </div>
+        </nav>
+        
+        <div><img src="../images/공지사항.jpg" id="img"></div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            SUL 사칭 사이트 주의 안내
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><p>안녕하세요, SUL입니다.</p>
+                <p>최근 SUL을 사칭하여 대체불가토큰(NFT) 무상 지급에 관한 이벤트 참여를 독려하는 이메일 유포 및 허위 사이트 게시 사례가 확인되고 있습니다.</p>
+                <p>이는 SUL과 전혀 무관한 이벤트 및 사이트로, 사칭 메일 등으로 인한 피해가 발생하지 않도록 발신 이메일 주소 및 접속 URL 확인 등의 각별한 주의 부탁드립니다.</p>
+                <p>[SUL] 사칭 사례] 
+                    - SUL의 공식 웹사이트(https://www.SUL.com/)가 아닌 사칭 웹사이트(SUL의 상호명, 주소지, 사업자등록번호 등 도용)를 통해 허위의 이벤트 참여 독려 
+                    - SUL의 공식 웹사이트(https://www.SUL.com/)가 아닌 사칭 웹사이트(SUL의 상호명, 주소지, 사업자등록번호 등 도용)를 통해 물건을 판매하여 구매자로부터 상품 금액만 결제받고 상품은 발송하지 않은 채 연락이 두절되는 피해 사례 
+                    - 이외 SUL의 공식 웹사이트(https://www.SUL.com/)는 아니나, SUL의 상호명, 주소지, 사업자등록번호 등을 도용하여 표시한 모조 사이트
+                </p>
+                     
+                    
+                   <p>감사합니다.</p> 
+            
+            
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                개인정보 도용 피해를 예방하기 위해 비밀번호를 정기적으로 변경해주세요
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> 
+                    <p>안녕하세요 SUL입니다.</p>
+                    <p>최근 언론보도등에서 아이디 도용과 관련해서 이용자분들의 우려가 있으실 부분에 대해 다음과 같이 말씀드립니다.</p>
+                    <p>피싱 사이트 또는 악성코드에 감염된 단말기 등을 통해 아이디, 비밀번호가 유출되거나 보안이 약한 일부 사이트에서 유출되는 경우 동일한 정보로 가입한 다른 사이트에서도 연달아 피해가 발생할 수 있습니다.</p>
+                    <p>따라서 계정 정보 도용 피해를 예방하기 위해 하나의 아이디로 여러 사이트를 이용하시는 경우 비밀번호를 변경하고, 가능하다면 각 사이트별로 다른 비밀번호를 사용할 것을 권고하고 있습니다.  
+                    </p>
+                    <p>SUL은 이용자 여러분이 안심하고 서비스를 이용하실 수 있도록 노력해오고 있습니다. 앞으로도 이용자 개인정보 보호에 최선을 다하겠습니다.</p>
+                    <p>감사합니다.</p>
+                </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseTwo">
+            피싱/스미싱 사기에 주의하세요.
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <p>피싱/스미싱 사기에 주의하세요</p>
+                <p>SUL의 문자는 대표 연락처인 1234-1234 으로만 발송됩니다. </p>
+                <p>피해발생 시 신고기관으로 즉시 신고하시기 바랍니다.</p>
+          
+               
+               </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseTwo">
+            금융감독원 사칭 악성코드 피해주의 안내
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> 
+                <p>안녕하세요 SUL 입니다.</p>
+                <p>최근 인터넷 이용 시 쿠팡을 비롯한 타 인터넷 사이트에 방문할 경우  </p>
+                <p>보안인증을 가장한 팝업 악성코드가 지속적으로 유포되어 주의 말씀 드립니다.</p>
+                <br/>
+                <p>해당 악성코드는 시스템에서 사용하는 hosts 파일을 변조하는 방법으로 피싱 사이트 접속을 유도하는 파밍 악성코드입니다.</p>
+                <p>이 악성코드에 감염되면, SUL 홈페이지 접속 시 아래와 같은 이미지가 노출되거나 접속이 되지 않는 증상이 발생할 수 있습니다.
+
+                </p>
+                <p>해당 팝업을 확인하셨을 경우, 절대 금융 정보를 입력하지 마시고</p>
+                <p>만약 금융정보까지 입력하셨다면, 금융정보 유출로 인한 금전적 피해 등의 금융사고로 이어질 수 있으므로,</p>
+                <p>1) 보호나라(www.boho.or.kr)를 통해 해킹피해신고(전화:118)를 접수하시고</p>
+                <p>2) 해당 금융사에 연락하여 ‘비밀번호’와 ‘보안카드’를 변경해 주시기 바랍니다.</p>
+                <p></p>
+                <p></p>
+
+                
+                
+               </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseTwo">
+            신종금융사기! 스미싱 주의바랍니다.
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <p>최근 해외결제 관련 소비자보호센터 및 피해구제센터 등을 사칭하는 스미싱 사례가 증가하고 있습니다.</p>
+                <p>의심스러운 SMS 내 기재된 번호로 전화 연결하거나 인터넷주소(URL) 등을 클릭하지 않도록 주의하여 주시고, 피해 발생시 아래 신고기관으로 즉시 신고하시기 바랍니다.</p>
+                <p></p>
+                <p></p>
+                <p></p>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+            전자금융거래 이용약관 개정 공지
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><strong></strong> 
+            <p>안녕하세요.</p>
+            <p>전자금융거래 이용약관 개정사항을 아래와 같이 안내 드립니다.</p>
+            <p>[이용약관 개정안내]</p>
+            <p>1. 약관 개정 사유 : 쿠팡페이㈜ 법인 이전에 따른 이용약관 개정</p>
+            <p>2. 개정 내용</p>
+            <p>3. 시행일 : 2023년 4월 28일</p>
+            <p>이번 약관 개정과 관련해서 궁금하신 사항은 고객센터(1577-7011) 또는 help@sul.com 으로 문의주시면 친절하게 안내 드리도록 하겠습니다.
+                감사합니다.</p>
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+</body>
+</html>

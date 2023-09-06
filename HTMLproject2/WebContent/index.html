@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author"
+	content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.101.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+<link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/pricing/">
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/index.css" rel="stylesheet">
+<link href="./css/pricing.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/payment.js" type="text/javascript"></script>
+<script src="./js/search.js" type="text/javascript"></script>
+<title>index</title>
+<style>
+ 
+
+
+
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media ( min-width : 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+</style>
+
+</head>
+<body>
+
+ <nav class="navbar bg-body-tertiary fixed-top" id="top">
+
+		<center>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><img
+					src="./images/lo.png"></a>
+		</center>
+		<button class="navbar-toggler" type="button"
+			data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+			aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="offcanvas offcanvas-end" tabindex="-1"
+			id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+			<div class="container">
+					<li class="nav-item"><button type="button"
+							class="btn btn-primary" data-bs-toggle="modal"
+							data-bs-target="#exampleModal" id="login">Login</button></li>
+							</div>
+			<div class="offcanvas-body">
+				
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+					</li>
+					
+					<li class="nav-item"><a class="nav-link" href="HTML/aboutus.html">소개</a></li>
+					
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> 상품 </a>
+						<ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="HTML/highshop.html">증류주</a></li>
+              <li><a class="dropdown-item" href="HTML/makshop.html">탁주</a></li>
+            </ul>
+					
+							
+							
+             
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> 주문 </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="HTML/cart.html">장바구니</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="HTML/payment.html">결제</a></li>
+						</ul></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> 커뮤니티 </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="HTML/FAQ.html">FAQ</a></li>
+							<li><a class="dropdown-item" href="HTML/coment.html">후기</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="HTML/news.html">공지사항</a></li>
+						</ul></li>
+				</ul>
+				<form class="d-flex mt-3" role="search">
+					<input  class="form-control me-2" id="search" type="search" placeholder="Search"
+						aria-label="검색">
+					<button class="btn btn-outline" type="submit" id="searchbtn">검색</button>
+
+				</form>
+			</div>
+		</div>
+		</div>
+	</nav>
+	
+	<div class="modal fade" id="exampleModal" tabindex="-1"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="form-title text-center">
+						<h4>Login</h4>
+					</div>
+					<div class="d-flex flex-column text-center">
+						<form>
+							<div class="form-group">
+								<input type="email" class="form-control" id="id"
+									placeholder="ID">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" id="password"
+									placeholder="Password">
+							</div>
+					</div>
+					<div class="modal-footer">
+						<a type="button" class="btn btn" id="log" href="index.html">Login</a>
+						<a type="button" class="btn btn" id="sin" href="HTML/singup.html">SignUp</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		
+		<center>
+			<div id="carouselExampleInterval" class="carousel slide"
+				data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-bs-interval="3000">
+						<img src="images/1-11.png" class="d-block w-60">
+					</div>
+					<div class="carousel-item" data-bs-interval="3000">
+						<img src="images/1-4.jpg" class="d-block w-60">
+					</div>
+					<div class="carousel-item" data-bs-interval="3000">
+						<img src="images/1-17.jpg" class="d-block w-60">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button"
+					data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button"
+					data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</center>
+
+		<!-- Carousel wrapper -->
+		<br /> <br />
+		<center>
+			<h1>전국의 전통 술을 만나보세요.</h1>
+
+			<br /> <a type="button"
+				class="btn btn-lg btn-block btn-outline-primary"
+				href="HTML/allshop.html" id="item">상품보기</a> <br /> <br /> <br />
+			<hr>
+		</center>
+		<div
+			class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+			<h3 class="display-4">구독 하기</h3>
+			<p class="lead">고객님의 취향을 파악하여 매 월 3~5가지의 전통술을 랜덤으로 맛 볼 수 있습니다.</p>
+		</div>
+
+		<div class="container">
+			<div class="card-deck mb-3 text-center">
+				<div class="card mb-4 shadow-sm">
+					<div class="card-header" id="head">
+						<h4 class="my-0 font-weight-normal">Free</h4>
+					</div>
+					<div class="card-body">
+						<h1 class="card-title pricing-card-title">
+							무료<small class="text-muted"></small>
+						</h1>
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>신상품이 들어오게 되면 제일 먼저 소식을 받아보실 수 있습니다.</li>
+							<li>회원가입 후 15% 할인 쿠폰 발행</li>
+							<li>첫 배송시 무료 배송</li>
+							<li>매 월 1주차 추첨을 통해 주류 1병 배송(회원 한에서)</li>
+						</ul>
+						<a type="button" class="btn btn-lg btn-block btn-outline-primary"
+							href="HTML/singup.html" id="singup">회원가입</a>
+						<div class="modal-dialog modal-xl"
+							href="btn btn-lg btn-block btn-outline-primary"></div>
+					</div>
+				</div>
+				<div class="card mb-4 shadow-sm">
+					<div class="card-header" id="head">
+						<h4 class="my-0 font-weight-normal">Basic</h4>
+					</div>
+					<div class="card-body">
+						<h1 class="card-title pricing-card-title">
+							29,900원<small class="text-muted">/ month</small>
+						</h1>
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>매 월 고객 취향에 맞게 3가지 전통주를 랜덤으로 배송</li>
+							<li>1년이상 구독시 3병 서비스 배송</li>
+							<li>언제든 구독 취소 가능</li>
+							<li>구독시 15% 할인 쿠폰 매 월 지급</li>
+						</ul>
+						<a type="button" class="btn btn-lg btn-block btn-primary"
+							href="HTML/payment.html" id="sub">구독하기</a>
+					</div>
+				</div>
+				<div class="card mb-4 shadow-sm">
+					<div class="card-header" id="head">
+						<h4 class="my-0 font-weight-normal" id="head">Premium</h4>
+					</div>
+					<div class="card-body">
+						<h1 class="card-title pricing-card-title">
+							49,900원<small class="text-muted">/ month</small>
+						</h1>
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>매 월 고객 취향에 맞게 5가지 전통주를 랜덤으로 배송</li>
+							<li>1년이상 구독시 5병 서비스 배송</li>
+							<li>언제든 구독 취소 가능</li>
+							<li>배송지 3가지 추가 가능</li>
+							<li>선물 포장 가능</li>
+							<li>구독시 20% 할인 쿠폰 매 월 지급</li>
+						</ul>
+						<a type="button" class="btn btn-lg btn-block btn-primary"
+							href="HTML/payment.html" id="sub">구독 하기</a>
+					</div>
+				</div>
+				<div class="card mb-4 shadow-sm">
+					<div class="card-header" id="head">
+						<h4 class="my-0 font-weight-normal" id="head">Premium+</h4>
+					</div>
+					<div class="card-body">
+						<h1 class="card-title pricing-card-title">
+							89,900원<small class="text-muted">/ month</small>
+						</h1>
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>매 월 고객 취향에 맞게 7가지 전통주를 랜덤으로 배송</li>
+							<li>1년이상 구독시 7병 서비스 배송</li>
+							<li>언제든 구독 취소 가능</li>
+							<li>배송지 2곳 동시 배송</li>
+							<li>선물 포장 가능</li>
+							<li>구독시 30% 할인 쿠폰 매 월 지급</li>
+						</ul>
+						<a type="button" class="btn btn-lg btn-block btn-primary"
+							href="HTML/payment.html" id="sub">구독 하기</a>
+					</div>
+				</div>
+			</div>
+
+			<footer class="pt-4 my-md-5 pt-md-5 border-top">
+				<div class="row">
+					<div class="col-12 col-md">
+						<img class="mb-2" src="images/lo.png" alt="" width="200"
+							height="45"> <small class="d-block mb-3 text-muted">&copy;
+							2015-2022</small>
+					</div>
+					<div class="col-6 col-md">
+						<h5>Features</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Cool stuff</a></li>
+							<li><a class="text-muted" href="#">Random feature</a></li>
+							<li><a class="text-muted" href="#">Team feature</a></li>
+							<li><a class="text-muted" href="#">Stuff for developers</a></li>
+							<li><a class="text-muted" href="#">Another one</a></li>
+							<li><a class="text-muted" href="#">Last time</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<h5>Resources</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Resource</a></li>
+							<li><a class="text-muted" href="#">Resource name</a></li>
+							<li><a class="text-muted" href="#">Another resource</a></li>
+							<li><a class="text-muted" href="#">Final resource</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<h5>About</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Team</a></li>
+							<li><a class="text-muted" href="#">Locations</a></li>
+							<li><a class="text-muted" href="#">Privacy</a></li>
+							<li><a class="text-muted" href="#">Terms</a></li>
+						</ul>
+
+
+					</div>
+				</div>
+		</div>
+		</footer>
+	
+
+</body>
+</html>
